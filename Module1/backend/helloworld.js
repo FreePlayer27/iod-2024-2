@@ -1,5 +1,8 @@
 
 
+
+
+
 // function sayHello(){
 //     console.log("Hello");
 // }
@@ -45,3 +48,5 @@ console.log("div(2,4)".concat('=', div(2, 4)));
 console.log("mult(2,4)".concat('=', mult(2, 4)));
 
 helloName("Evgeny");
+
+
