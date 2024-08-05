@@ -5,14 +5,13 @@ const book = {
     "Number_of_pages" : 987
     }
 
-    function printMemeber(instance, name){
-        console.log(name + " = " + instance[name]);
+    function printMemebers(instance){
+        for (const [key, value] of Object.entries(instance)) {
+            console.log(`${key} = ${value}`);
+          }
     }
 
-    printMemeber(book, "title");
-    printMemeber(book, "description");
-    printMemeber(book, "author");
-    printMemeber(book, "Number_of_pages");
+    printMemebers(book);
 
     
     console.log(book);
@@ -24,10 +23,7 @@ const book = {
     book.Number_of_pages = "300";
     
 
-    printMemeber(book, "title");
-    printMemeber(book, "description");
-    printMemeber(book, "author");
-    printMemeber(book, "Number_of_pages");
+    printMemebers(book);
     
     console.log(book);
 
